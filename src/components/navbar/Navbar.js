@@ -94,7 +94,7 @@ const Navbar = () => {
 
   useEffect(() => {
     i18n.changeLanguage(lang);
-  }, [lang]);
+  }, [i18n, lang]);
 
   useEffect(() => {
     menuOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
@@ -108,7 +108,7 @@ const Navbar = () => {
     tab = tab ? tab : pages[0];
     setActiveTab(tab.id);
     console.log('Active tab', activeTab);
-  }, [location, activeTab]);
+  }, [pages, location, activeTab]);
 
   const AppMenu =() => {
     return (
