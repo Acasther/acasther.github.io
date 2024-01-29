@@ -16,11 +16,11 @@ const Footer = () => {
         <Grid item xs={8} className='contact-form' direction='row'>
           <Typography variant='h2'>{t("common.getInTouch")}</Typography>
           <Stack spacing={3}>
-            <TextField required color='info' sx={{ background: '#e6e6e6', width: `500px`, marginTop: 2, accentColor: '#99A7CA' }} label='Name' variant='filled' size='medium' />
-            <TextField required sx={{ background: '#e6e6e6', width: `500px`, marginTop: 2, accentColor: '#99A7CA' }} label='Email' variant='filled' size='medium' />
+            <TextField required color='info' sx={{ background: '#e6e6e6', width: `500px`, marginTop: 2, accentColor: '#99A7CA' }} label={t("common.name")} variant='filled' size='medium' />
+            <TextField required sx={{ background: '#e6e6e6', width: `500px`, marginTop: 2, accentColor: '#99A7CA' }} label={t("contact.email")} variant='filled' size='medium' />
             <TextField required 
               sx={{ background: '#e6e6e6', width: `500px`, marginTop: 2, accentColor: '#99A7CA' }} 
-              label='Message' variant='filled' size='medium' multiline={true} minRows={6} />
+              label={t("common.message")} variant='filled' size='medium' multiline={true} minRows={6} />
             <div className='submit-btn'>
               <Button sx={{ textTransform: 'none', width: 130}}>{t("common.submit")}</Button>
             </div>

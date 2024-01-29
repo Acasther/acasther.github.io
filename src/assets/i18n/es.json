@@ -1,8 +1,8 @@
 {
   "common": {
-    "getInTouch": "Ponte en contacto",
-    "message": "Message",
-    "name": "Name",
+    "getInTouch": "Contáctenos",
+    "message": "Mensaje",
+    "name": "Nombre",
     "readMore": "Leer más",
     "learnMore": "Conocer más",
     "services": "Nuestros servicios",
@@ -71,7 +71,29 @@
     },
     "requirements": {
       "title": "Requisitos Generales de Inmigración",
-      "description": ""
+      "description": "La siguiente lista describe los requisitos generales para cualquier solicitud de residencia.",
+      "list": {
+        "verification": "<strong>Verificación del requisito principal</strong>. Dependiendo de la categoría para la cual presentará su solicitud, se requerirá documentación para confirmar la elegibilidad bajo esa categoría. Por ejemplo, las personas que soliciten bajo la categoría de jubilación deben presentar una carta que confirme los ingresos por jubilación; las personas que soliciten bajo la categoría de inversión deben proporcionar certificaciones de la inversión, ya sea en bienes raíces o en un negocio; las personas que soliciten la residencia por matrimonio deben presentar un certificado de matrimonio de Costa Rica.",
+        "check": "<strong>Verificación de antecedentes</strong>. Este documento debe ser emitido por una autoridad nacional. En el caso de los ciudadanos estadounidenses, por ejemplo, debe ser del FBI. En el caso de los ciudadanos canadienses, debe ser emitido por la Real Policía Montada de Canadá. En el caso de los ciudadanos del Reino Unido, debe ser emitido por la Asociación de Jefes de Policía.",
+        "birth": "<strong>Certificado de nacimiento</strong>. Se requiere una copia reciente de su certificado de nacimiento, no mayor de seis meses.",
+        "application": "<strong>Formulario de solicitud</strong>. Completamos esto para nuestros clientes.",
+        "cover": "<strong>Carta de presentación</strong>. También completamos esto para nuestros clientes. Contiene cierta información sobre usted.",
+        "fingerprints": "<strong>Huellas digitales</strong>. Se obtienen en un departamento de policía. Coordinaremos con usted para recibirlas, brindando asistencia en San José llevándolo desde nuestra oficina hasta el lugar correspondiente y manejando los formularios correspondientes.",
+        "certify": "<strong>Copia certificada del pasaporte</strong>. Certificamos su copia de pasaporte.",
+        "registration": "<strong>Registro consular</strong>. Se requiere el registro en el consulado de su país, también completamos esto para nuestros clientes.",
+        "passport": "<strong>Fotografías tamaño pasaporte</strong>.",
+        "fees": "<strong>Tarifas gubernamentales</strong>. Inicialmente, se requiere pagar $251 USD en tarifas de solicitud. Al final del proceso, se requiere pagar $433 USD adicionales en tarifas gubernamentales."
+      },
+      "notes": {
+        "title": "Notas Importantes Sobre Los Documentos",
+        "list": {
+          "translated": "Todos los documentos en un idioma extranjero deben traducirse al español. Los costos de las traducciones variarán según el idioma original.",
+          "apostille": "Todos los documentos del extranjero deben ser autenticados para su uso en Costa Rica. Los documentos de ciertos países requieren una apostilla.",
+          "legislation": "Los documentos de otros países requieren una legalización. Para obtener más información sobre apostillas, haga clic aquí.",
+          "certificate": "Los certificados de nacimiento y las verificaciones de antecedentes (y cualquier otro documento del extranjero) deben emitirse dentro de los seis meses previos a la presentación de la solicitud. Por lo tanto, el certificado de nacimiento original emitido cuando nació no será válido para fines de inmigración en Costa Rica.",
+          "check": "Las verificaciones de antecedentes deben provenir de los países donde vivió legalmente en los últimos tres años. Vivir legalmente excluye a las personas que vivían como turistas; solo se aplica a personas que residían legalmente en un país extranjero."
+        }
+      }
     }
   },
   "links": {
