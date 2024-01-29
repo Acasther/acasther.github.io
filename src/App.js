@@ -12,7 +12,7 @@ const App = () => {
   <ThemeProvider theme={theme}>
     <Navbar />
     <Routes>
-      <Route path='/costa-legal' element={<Home />} />
+      <Route path='/' element={<Home />} />
       <Route path='/legal' element={<Legal /> } />
       <Route path='/immigration' element={<Immigration /> } />
     </Routes>
