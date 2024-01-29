@@ -121,7 +121,7 @@ const Navbar = () => {
       </div>
       <Fade in={menuOpen}>
         <Box sx={{ zIndex: 1}}>
-          <Sidebar pages={pages} activeTab={activeTab} languages={languages} lang={lang} handleLanguage={handleLanguage} />
+          <Sidebar pages={pages} activeTab={activeTab} languages={languages} lang={lang} handleLanguage={handleLanguage} navigateLink={navigateLink} />
         </Box>
       </Fade>
       </>
