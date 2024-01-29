@@ -22,7 +22,7 @@ const Navbar = () => {
     {
       "id": "home",
       "name": t("links.home"),
-      "link": "/costa-legal"
+      "link": "/"
     },
     {
       "id": "immigration",
@@ -98,7 +98,8 @@ const Navbar = () => {
     console.log('Location', location);
     const currentPath = location.pathname.endsWith('/') ? location.pathname.slice(0, -1) : location.pathname;
     console.log('currentPath', currentPath)
-    const tab = pages.find(page => page.link === currentPath);
+    let tab = pages.find(page => page.link === currentPath);
+    tab = tab ? tab : pages[0];
     setActiveTab(tab.id);
     console.log('Active tab', activeTab);
   }, [location, activeTab]);
