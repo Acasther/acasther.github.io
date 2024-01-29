@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/logos/costa_white_logo.png';
+import logo from '../../assets/logos/costa_legal_wt.png';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { Button, Grid, IconButton, Stack, TextField, Typography } from '@mui/material';

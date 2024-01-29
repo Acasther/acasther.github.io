@@ -29,7 +29,7 @@ const Home = () => {
 
     <section className='about-us'>
       <Typography variant='h2' sx={{ paddingBottom: 1 }}>{t("home.aboutUs.title")}</Typography>
-      <span className='divider' style={{ marginBottom: 15 }}></span>
+      <span className='divider'></span>
       <Typography variant='body1'>{t("home.aboutUs.description")}</Typography>
     </section>
 

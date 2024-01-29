@@ -1,0 +1,34 @@
+{
+  "main": {
+    "accordions": [
+      {
+        "title": "immigration.residencyRetired.title",
+        "desc": "immigration.residencyRetired.description"
+      },
+      {
+        "title": "immigration.residencyFixed.title",
+        "desc": "immigration.residencyFixed.description"
+      },
+      {
+        "title": "immigration.residencyInvestors.title",
+        "desc": "immigration.residencyInvestors.description"
+      },
+      {
+        "title": "immigration.residencyMarriage.title",
+        "desc": "immigration.residencyMarriage.description"
+      },
+      {
+        "title": "immigration.residencyParents.title",
+        "desc": "immigration.residencyParents.description"
+      },
+      {
+        "title": "immigration.residencyEntrepeneurs.title",
+        "desc": "immigration.residencyEntrepeneurs.description"
+      },
+      {
+        "title": "immigration.residencyForeign.title",
+        "desc": "immigration.residencyForeign.description"
+      }
+    ]
+  }
+}

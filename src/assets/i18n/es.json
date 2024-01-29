@@ -4,6 +4,7 @@
     "message": "Message",
     "name": "Name",
     "readMore": "Leer más",
+    "learnMore": "Conocer más",
     "services": "Nuestros servicios",
     "submit": "Enviar"
   },
@@ -35,6 +36,43 @@
     },
     "welcome": "Tu guía legal hacia un futuro más brillante en Costa Rica y más allá",
     "welcomeBtn": "Reserva una consulta"
+  },
+  "immigration": {
+    "titleCR": "Inmigración en Costa Rica",
+    "summary": "Ofrecemos los siguientes servicios para ayudarte en el proceso de obtener residencia en Costa Rica. Las leyes de inmigración en Costa Rica ofrecen numerosas opciones para que las personas se muden al país. Hay oportunidades para jubilados, personas con ingresos fijos, inversionistas, cónyuges o padres de un costarricense, personas autónomas o emprendedores y empleados de una empresa.",
+    "residencyServices": "Servicios de Residencia",
+    "residencyRetired": {
+      "title": "Personas Jubiladas (Pensionados)",
+      "description": "Esta opción está disponible para personas que están actualmente jubiladas y reciben ingresos de jubilación de al menos $1,000 al mes. Los ingresos pueden provenir de una pensión del Sistema de Seguridad Social o del Sistema de Pensiones en su país de origen. Esta residencia también está disponible para personas que reciben ingresos por discapacidad. Luego, es posible patrocinar a cónyuges e hijos."
+    },
+    "residencyFixed": {
+      "title": "Personas con Ingresos Fijos (Rentistas)",
+      "description": "En esta opción, se requiere demostrar que recibes al menos $2,500 al mes. Hay varias formas de demostrar este ingreso. Una opción es depositar una cantidad igual a dos años de ingresos, que son $60,000 USD, en un banco en el extranjero o en Costa Rica. Otra opción es certificar tus ingresos desde el extranjero o abrir un fideicomiso."
+    },
+    "residencyInvestors": {
+      "title": "Inversionistas",
+      "description": "Recientemente, el gobierno costarricense redujo la cantidad mínima de inversión a $150,000 USD en Costa Rica. La inversión puede ser en un negocio o en activos como bienes raíces."
+    },
+    "residencyMarriage": {
+      "title": "Bajo Matrimonio",
+      "description": "La categoría de matrimonio está disponible para extranjeros que se casan con un costarricense. Después de dos años de matrimonio y residencia en Costa Rica, es posible obtener la ciudadanía."
+    },
+    "residencyParents": {
+      "title": "Padres",
+      "description": "Los extranjeros que tienen hijos nacidos en Costa Rica son elegibles para la residencia."
+    },
+    "residencyEntrepeneurs": {
+      "title": "Personas Autónomas o Emprendedoras",
+      "description": "Esta categoría está disponible para personas que desean trabajar por cuenta propia o abrir su propio negocio en Costa Rica. No se requiere una cantidad mínima de dinero, solo tener un negocio. Hay un par de opciones para personas autónomas. Por un lado, las personas que tienen una habilidad o área de especialización particular califican para una Residencia para Trabajadores Calificados, y por lo tanto, es necesario demostrar cuál es tu habilidad. También hay una residencia para personas que simplemente tienen un negocio físico, como un hotel o restaurante."
+    },
+    "residencyForeign": {
+      "title": "Trabajadores Extranjeros",
+      "description": "Existen opciones para que las empresas contraten trabajadores extranjeros. Ya sean ejecutivos, gerentes, técnicos o consultores, las regulaciones costarricenses permiten múltiples opciones para contratar trabajadores extranjeros."
+    },
+    "requirements": {
+      "title": "Requisitos Generales de Inmigración",
+      "description": ""
+    }
   },
   "links": {
     "contactUs": "Contáctenos",

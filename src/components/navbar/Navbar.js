@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { AppBar, Toolbar, IconButton, Select, FormControl, Stack, Link, Fade, useMediaQuery, useTheme, Box, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import logo from '../../assets/logos/costa_logo_white.png';
+import logo from '../../assets/logos/costa_legal_wt.png';
 import usFlag from '../../assets/icons/us_flag.png';
 import crFlag from '../../assets/icons/costa_rica_flag.png';
 import { Sidebar } from '../Sidebar/Sidebar';
@@ -155,7 +155,7 @@ const Navbar = () => {
       boxShadow: 'none', transition: 'background 0.3s ease-in-out'}}>
       <Toolbar>
         <div style={{ flexGrow: 1}} className='icon'>
-          <IconButton size='large' edge='start' color='inherit' aria-label='logo'>
+          <IconButton size='large' edge='start' color='inherit' aria-label='logo' sx={{ padding: '3px'}}>
             <img src={logo} alt="logo" className='navbar-logo' />
           </IconButton>
         </div>
