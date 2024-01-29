@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f4eafee.css",
-    "main.js": "/static/js/main.1296d1c2.js",
+    "main.css": "/static/css/main.70d07410.css",
+    "main.js": "/static/js/main.ee8a9832.js",
     "static/media/playa_lagosta.jpg": "/static/media/playa_lagosta.4abb6d3a2d502edf74ef.jpg",
     "static/media/immigration.jpg": "/static/media/immigration.334b888dc1bbbf082281.jpg",
     "static/media/real_estate.jpg": "/static/media/real_estate.5a70c354c3a664933d0b.jpg",
     "static/media/insurance.jpg": "/static/media/insurance.e5286226f820fa39aada.jpg",
-    "static/media/costa_white_logo.png": "/static/media/costa_white_logo.020d7dcaf1734f21cc94.png",
+    "static/media/costa_legal_wt.png": "/static/media/costa_legal_wt.573a03b2d5c0213f39de.png",
     "index.html": "/index.html",
-    "main.2f4eafee.css.map": "/static/css/main.2f4eafee.css.map",
-    "main.1296d1c2.js.map": "/static/js/main.1296d1c2.js.map"
+    "main.70d07410.css.map": "/static/css/main.70d07410.css.map",
+    "main.ee8a9832.js.map": "/static/js/main.ee8a9832.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f4eafee.css",
-    "static/js/main.1296d1c2.js"
+    "static/css/main.70d07410.css",
+    "static/js/main.ee8a9832.js"
   ]
 }
