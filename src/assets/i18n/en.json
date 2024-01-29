@@ -71,7 +71,66 @@
     },
     "requirements": {
       "title": "General Immigration Requirements",
-      "description": ""
+      "description": "The following list outlines the general requirements for any application for residency.",
+      "list": {
+        "verification": "<strong>Verification of the main requirement</strong>. Depending on the category you will be applying for, documentation will be required to confirm eligibility under that category. For instance, people applying under the retirement category must produce a letter providing confirmation of the retirement income; people applying under the investment category must provide certifications of the investment regardless of whether the investment is in real estate or in a business; people applying for residency through marriage must produce a marriage certificate from Costa Rica.",
+        "check": "<strong>Background check</strong>. This document should be issued by a national authority. In the case of US nationals, for instance, it should be from the FBI. In the case of Canadian nationals, it should be issued by the Royal Canadian Mounted Police. In the case of UK nationals, it should be issued by the Association of Chief Police Officers.",
+        "birth": "<strong>Birth certificate</strong>. A new copy of your birth certificate is required, not over six months old.",
+        "application": "<strong>Application form</strong>. We complete this for our clients.",
+        "cover": "<strong>Cover letter</strong>. We complete this for our clients as well. It contains certain information about you.",
+        "fingerprints": "<strong>Fingerprints</strong>. Obtained at a police department. We will coordinate with you in order to receive these, assisting in San José or Liberia by driving you from our office to the location concerned and handling the corresponding forms.",
+        "certify": "<strong>Certified passport copy</strong>. We certify your passport copy.",
+        "registration": "<strong>Consular registration</strong>. Registration with your country’s consulate is required, we also complete this for our clients.",
+        "passport": "<strong>Passport-size photographs</strong>.",
+        "fees": "<strong>Government fees</strong>. Initially, it is required to pay $251 USD in application fees. At the end of the process, it is required to pay an additional $433 USD in government fees."
+      },
+      "notes": {
+        "title": "Important Notes About The Documents",
+        "list": {
+          "translated": "All documents in a foreign language must be translated into Spanish. The costs for the translations will vary depending on the original language.",
+          "apostille": "All documents from abroad must be authenticated for its use in Costa Rica. Documents from certain countries require an apostille.",
+          "legislation": "Documents from other countries require a legalization. To learn more about apostilles please click here.",
+          "certificate": "The birth certificates and the background checks (and any other documents from abroad) must be issued within six months prior to filing the application. Therefore, the original birth certificate issued when you were born will not be valid for immigration purposes in Costa Rica.",
+          "check": "Background checks must be from the countries where you lived legally in the past three years. Living legally excludes people who were living as tourists, it is only applicable to people who were legally residing in a foreign country."
+        }
+      }
+    },
+    "process": {
+      "title": "Processing Time",
+      "description": "The application process for temporary residency has three stages. Namely, document procurement, Government Analysis and Decision, and Registration. Please review below the description of these three stages as well as the corresponding timeline applicable to each stage.",
+      "table": {
+        "titles": {
+          "stage": "Stage",
+          "timeline": "Timeline",
+          "description": "Description"
+        },
+        "list": {
+          "procurement": {
+            "title": "Document Procurement",
+            "timeline": "8 weeks",
+            "description": "We will dedicate this period of time to make sure that you get the documents you will need to bring to Costa Rica, as well as preparing the rest of the documents required for the application. Generally, it takes about two months to obtain all the required documents."
+          },
+          "anaylsis": {
+            "title": "Analysis & Decision by the DGME",
+            "timeline": "9 months",
+            "description": "Once the required documents have been obtained, we will file the application with the Immigration Department (DGME) By law, the DGME should process the application within 90 days. However, based on recent processing times, the DGME is currently taking about 12 months for processing an application."
+          },
+          "registration": {
+            "title": "Registration",
+            "timeline": "4 weeks",
+            "description": "Once the application has been approved, We will proceed with your mandatory registration with the CCSS for the Social Security system (also known as CAJA). In addition, we will obtain the ID for foreigners (DIMEX aka cédula). This last step completes the process."
+          }
+        }
+      },
+      "notes": {
+        "title": "Important Notes About The Processing Times",
+        "list": {
+          "application": "Once the application is filed, the DGME will issue a Receipt Notice, which demonstrates that there is an application pending. This document in conjunction with your passport will function as a valid ID.",
+          "review": "As noted, the DGME takes about 9 months for reviewing the application. The law allows you to remain in the country while the application is pending. Thus, the applicant is not required to leave the country to renew the 90-day visa.",
+          "driver": "A Costa Rican driver’s license cannot be obtained until your residency is fully approved and your DIMEX is on hand. Applicants who want to use a foreign driver’s license during the waiting period are required to leave the country every three months to obtain a renewed 90-day visa stamp in their passport. This seems to conflict with the note above but it is the result of different government departments having different rules.",
+          "leave": "If you leave the country during the application waiting period,  you may be required to produce a return ticket when trying to reenter the country at a border or airport. Whether a bus ticket or a plane ticket is required will depend on whether you are arriving at an airport or through a border crossing."
+        }
+      }
     }
   },
   "links": {

@@ -124,8 +124,8 @@
     padding-top: 5%;
   }
   .about-us {
-    padding: 70px 5% 0px;
-    height: 400px;
+    padding: 70px 5% 40px;
+    height: auto;
   }
   .about-us .MuiTypography-body1 {
     padding: 30px 15%;

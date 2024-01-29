@@ -14,10 +14,15 @@
 .immigration-container {
   min-height: 500px;
   padding: 25px 15%;
+  font: 500 18px 'Libre Franklin', sans-serif;
 }
 
-.immigration-categories > .MuiTypography-body1 {
-  margin-bottom: 30px;
+.immigration-list {
+  padding: 20px 0px 20px 30px;
+}
+
+.immigration-list-item > .MuiTypography-body2 {
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {

@@ -101,13 +101,10 @@ const Navbar = () => {
   }, [menuOpen]);
 
   useEffect(() => {
-    console.log('Location', location);
     const currentPath = location.pathname.endsWith('/') ? location.pathname.slice(0, -1) : location.pathname;
-    console.log('currentPath', currentPath)
     let tab = pages.find(page => page.link === currentPath);
     tab = tab ? tab : pages[0];
     setActiveTab(tab.id);
-    console.log('Active tab', activeTab);
   }, [pages, location, activeTab]);
 
   const AppMenu =() => {
@@ -121,7 +118,7 @@ const Navbar = () => {
       </div>
       <Fade in={menuOpen}>
         <Box sx={{ zIndex: 1}}>
-          <Sidebar pages={pages} activeTab={activeTab} languages={languages} lang={lang} handleLanguage={handleLanguage} navigateLink={navigateLink} />
+          <Sidebar pages={pages} activeTab={activeTab} languages={languages} lang={lang} handleLanguage={handleLanguage} navigateLink={navigateLink} handleMenu={handleMenu} />
         </Box>
       </Fade>
       </>
@@ -142,7 +139,7 @@ const Navbar = () => {
                   <div className='language-name'>{language.name}</div>
                   <div className='language-flag-container'><img src={language.flag} alt='logo' className='language-flag-image' /></div>
                 </div>
-                </MenuItem>
+              </MenuItem>
             ))}
           </Select>
         </FormControl>

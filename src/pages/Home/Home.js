@@ -42,7 +42,7 @@ const Home = () => {
       <div className='service-background' style={{ backgroundImage: `url(${immigrationBackground})` }}>
         <Typography variant='h2' >{t("home.immigration.title")}</Typography>
 
-        <Typography variant='body1' sx={{ paddingTop: '10px', paddingRight: 30, paddingBottom: 5}}>{t("home.immigration.description")}</Typography>
+        <Typography variant='body1' sx={{ paddingTop: 3, paddingRight: 30, paddingBottom: 5}}>{t("home.immigration.description")}</Typography>
 
         <div className='banner-btn'>
           <Button sx={{ textTransform: 'none'}} onClick={() => readMoreNavigate('/immigration')}>{t("common.readMore")}</Button>
