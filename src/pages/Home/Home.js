@@ -5,9 +5,15 @@ import realEstateBackground from '../../assets/images/real_estate.jpg'
 import insuranceBackground from '../../assets/images/insurance.jpg';
 import { Button, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [t, i18n] = useTranslation("global");
+  const navigate = useNavigate();
+
+  const readMoreNavigate = (link) => {
+    navigate(link);
+  }
 
   return (
     <>
@@ -39,7 +45,7 @@ const Home = () => {
         <Typography variant='body1' sx={{ paddingTop: '10px', paddingRight: 30, paddingBottom: 5}}>{t("home.immigration.description")}</Typography>
 
         <div className='banner-btn'>
-          <Button sx={{ textTransform: 'none'}}>{t("common.readMore")}</Button>
+          <Button sx={{ textTransform: 'none'}} onClick={() => readMoreNavigate('/immigration')}>{t("common.readMore")}</Button>
         </div>
       </div>
 

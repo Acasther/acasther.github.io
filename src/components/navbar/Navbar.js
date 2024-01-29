@@ -9,15 +9,17 @@ import crFlag from '../../assets/icons/costa_rica_flag.png';
 import { Sidebar } from '../Sidebar/Sidebar';
 import { KeyboardArrowDown } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [lang, setLang] = useState('en');
   const [t, i18n] = useTranslation("global");
   const location = useLocation();
-  const [activeTab, setActiveTab] = useState('');
+  const navigate = useNavigate();
 
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [lang, setLang] = useState('en');
+  const [activeTab, setActiveTab] = useState('');
+  
   const pages = [
     {
       "id": "home",
@@ -86,6 +88,10 @@ const Navbar = () => {
     setLang(newLang);
   }
 
+  const navigateLink = (link) => {
+    navigate(link)
+  }
+
   useEffect(() => {
     i18n.changeLanguage(lang);
   }, [lang]);
@@ -122,7 +128,7 @@ const Navbar = () => {
     ) : (
       <Stack direction='row' spacing={2} className='menuStack'> 
         {pages.map((page) => (
-          <Link href={page.link} underline="none" className='menuItem' color='inherit' 
+          <Link onClick={() => navigateLink(page.link)} underline="none" className='menuItem' color='inherit' 
             sx={{ color: page.id === activeTab ? '#6695fa' : '#FFFFFF', transition: 'color 0.3s ease-in-out' }} key={page.name}>
             {page.name}
           </Link>

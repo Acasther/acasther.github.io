@@ -20,6 +20,7 @@
 
 .menuItem:hover {
   color: #e4e8f5 !important;
+  cursor: pointer;
 }
 
 .menuItem > .MuiStack-root>:not(style)~:not(style) {
