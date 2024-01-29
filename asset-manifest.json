@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/costa-legal/static/css/main.567ca59f.css",
-    "main.js": "/costa-legal/static/js/main.9294672c.js",
-    "static/media/playa_lagosta.jpg": "/costa-legal/static/media/playa_lagosta.4abb6d3a2d502edf74ef.jpg",
-    "static/media/immigration.jpg": "/costa-legal/static/media/immigration.334b888dc1bbbf082281.jpg",
-    "static/media/real_estate.jpg": "/costa-legal/static/media/real_estate.5a70c354c3a664933d0b.jpg",
-    "static/media/insurance.jpg": "/costa-legal/static/media/insurance.e5286226f820fa39aada.jpg",
-    "static/media/costa_white_logo.png": "/costa-legal/static/media/costa_white_logo.020d7dcaf1734f21cc94.png",
-    "index.html": "/costa-legal/index.html",
-    "main.567ca59f.css.map": "/costa-legal/static/css/main.567ca59f.css.map",
-    "main.9294672c.js.map": "/costa-legal/static/js/main.9294672c.js.map"
+    "main.css": "/static/css/main.2f4eafee.css",
+    "main.js": "/static/js/main.14fbc7f4.js",
+    "static/media/playa_lagosta.jpg": "/static/media/playa_lagosta.4abb6d3a2d502edf74ef.jpg",
+    "static/media/immigration.jpg": "/static/media/immigration.334b888dc1bbbf082281.jpg",
+    "static/media/real_estate.jpg": "/static/media/real_estate.5a70c354c3a664933d0b.jpg",
+    "static/media/insurance.jpg": "/static/media/insurance.e5286226f820fa39aada.jpg",
+    "static/media/costa_white_logo.png": "/static/media/costa_white_logo.020d7dcaf1734f21cc94.png",
+    "index.html": "/index.html",
+    "main.2f4eafee.css.map": "/static/css/main.2f4eafee.css.map",
+    "main.14fbc7f4.js.map": "/static/js/main.14fbc7f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.567ca59f.css",
-    "static/js/main.9294672c.js"
+    "static/css/main.2f4eafee.css",
+    "static/js/main.14fbc7f4.js"
   ]
 }
