@@ -35,7 +35,7 @@ const Footer = () => {
             <Typography variant='body1' sx={{ paddingBottom: 7}}>+506 8390-8070</Typography>
 
             <Typography variant='h3' sx={{ color: '#99A7CA', fontSize: '34px'}}>{t("contact.email")}</Typography>
-            <Typography variant='body1' sx={{ paddingBottom: 7}}>info@costafirm.com</Typography>
+            <Typography variant='body1' sx={{ paddingBottom: 7}}>info@costalegalcr.com</Typography>
 
             <Typography variant='h3' sx={{ color: '#99A7CA', fontSize: '34px'}}>{t("contact.social")}</Typography>
             <Grid container spacing={{ sm: 3, lg: 0.5 }}>
