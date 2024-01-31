@@ -17,7 +17,7 @@ export const Sidebar = ((props) => {
         ))}
       </Stack>
       <div className='lang-dropdown-container'>
-        <NativeSelect className='lang-dropdown' IconComponent={KeyboardArrowDownIcon} defaultValue={lang} value={lang} 
+        <NativeSelect className='lang-dropdown' IconComponent={KeyboardArrowDownIcon} value={lang} 
           onChange={(event) => { handleLanguage(event); handleMenu()}}>
           {languages.map((language) => (
             <option value={language.id} key={language.id} style={{color: 'black'}}>{language.name}</option>

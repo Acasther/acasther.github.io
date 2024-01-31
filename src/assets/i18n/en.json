@@ -11,7 +11,8 @@
   "contact": {
     "email": "Email",
     "phone": "Phone",
-    "social": "Social"
+    "social": "Social",
+    "title": "Contact"
   },
   "home": {
     "aboutUs": {

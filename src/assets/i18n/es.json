@@ -11,7 +11,8 @@
   "contact": {
     "email": "Correo electrónico",
     "phone": "Teléfono",
-    "social": "Redes sociales"
+    "social": "Redes sociales",
+    "title": "Contacto"
   },
   "home": {
     "aboutUs": {

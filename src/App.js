@@ -5,6 +5,7 @@ import { Navbar, Footer } from './components';
 import Home from './pages/Home/Home';
 import Legal from './pages/Legal/Legal';
 import Immigration from './pages/Immigration/Immigration';
+import Contact from './pages/Contact/Contact';
 import './App.css';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Route path='/' element={<Home />} />
       <Route path='/legal' element={<Legal /> } />
       <Route path='/immigration' element={<Immigration /> } />
+      <Route path='/contact' element={<Contact /> } />
     </Routes>
     <Footer />
   </ThemeProvider>

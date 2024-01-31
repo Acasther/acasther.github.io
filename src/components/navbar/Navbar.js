@@ -125,13 +125,13 @@ const Navbar = () => {
     ) : (
       <Stack direction='row' spacing={2} className='menuStack'> 
         {pages.map((page) => (
-          <Link onClick={() => navigateLink(page.link)} underline="none" className='menuItem' color='inherit' 
+          <Link onClick={() => navigate(page.link)} underline="none" className='menuItem' color='inherit' 
             sx={{ color: page.id === activeTab ? '#6695fa' : '#FFFFFF', transition: 'color 0.3s ease-in-out' }} key={page.name}>
             {page.name}
           </Link>
         ))}
         <FormControl sx={{ m: 1, minWidth: 80 }}>
-          <Select sx={{ fontSize: '20px', fontWeight: 500, color: 'white', fill: 'white' }} defaultValue={lang} value={lang} IconComponent={KeyboardArrowDown}
+          <Select sx={{ fontSize: '20px', fontWeight: 500, color: 'white', fill: 'white' }} value={lang} IconComponent={KeyboardArrowDown}
             onChange={handleLanguage} className='language-button' renderValue={renderLangOption}>
             {languages.map((language) => (
               <MenuItem sx={{ fontWeight: lang === language.id ? 600 : 400, fontSize: '20px', width: '170px'}} value={language.id} key={language.id}>
@@ -152,7 +152,7 @@ const Navbar = () => {
       boxShadow: 'none', transition: 'background 0.3s ease-in-out'}}>
       <Toolbar>
         <div style={{ flexGrow: 1}} className='icon'>
-          <IconButton size='large' edge='start' color='inherit' aria-label='logo' sx={{ padding: '3px'}}>
+          <IconButton onClick={() => navigate('/')} size='large' edge='start' color='inherit' aria-label='logo' sx={{ padding: '3px'}}>
             <img src={logo} alt="logo" className='navbar-logo' />
           </IconButton>
         </div>
