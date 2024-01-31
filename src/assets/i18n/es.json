@@ -90,7 +90,7 @@
         "list": {
           "translated": "Todos los documentos en un idioma extranjero deben traducirse al español. Los costos de las traducciones variarán según el idioma original.",
           "apostille": "Todos los documentos del extranjero deben ser autenticados para su uso en Costa Rica. Los documentos de ciertos países requieren una apostilla.",
-          "legislation": "Los documentos de otros países requieren una legalización. Para obtener más información sobre apostillas, haga clic aquí.",
+          "legislation": "Los documentos de otros países requieren una legalización.",
           "certificate": "Los certificados de nacimiento y las verificaciones de antecedentes (y cualquier otro documento del extranjero) deben emitirse dentro de los seis meses previos a la presentación de la solicitud. Por lo tanto, el certificado de nacimiento original emitido cuando nació no será válido para fines de inmigración en Costa Rica.",
           "check": "Las verificaciones de antecedentes deben provenir de los países donde vivió legalmente en los últimos tres años. Vivir legalmente excluye a las personas que vivían como turistas; solo se aplica a personas que residían legalmente en un país extranjero."
         }
