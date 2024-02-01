@@ -14,7 +14,7 @@ const Contact = () => {
     <Banner bannerImage={immigrationBackground} title={t("contact.title")} />
     <div className="contact-container">
       <Grid className='contact-grid' container columns={{ xs: 1, lg: 12 }} direction={{xs: 'column', sm: 'row'}} spacing={2} sx={{ marginLeft: { xs: 0 }}}>
-        <Grid xs={5} className='contact-form'>
+        <Grid xs={5} className='contact-page-form'>
           <Typography variant='h2'>{t("links.contactUs")}</Typography>
           <span className='article-divider'></span>
           <Stack spacing={3} className="contact-stack">
