@@ -17,7 +17,7 @@ const Contact = () => {
         <Grid xs={5} className='contact-form'>
           <Typography variant='h2'>{t("links.contactUs")}</Typography>
           <span className='article-divider'></span>
-          <Stack spacing={3}>
+          <Stack spacing={3} className="contact-stack">
             <TextField required color='info' sx={{ background: '#FFFFFF', width: `500px`, marginTop: 2 }} label={t("common.name")} variant='outlined' size='medium' />
             <TextField required sx={{ background: '#FFFFFF', width: `500px`, marginTop: 2, accentColor: '#99A7CA' }} label={t("contact.email")} variant='outlined' size='medium' />
             <TextField required 
