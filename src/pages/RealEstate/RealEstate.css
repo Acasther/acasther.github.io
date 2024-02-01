@@ -1,0 +1,104 @@
+.real-estate {
+  padding: 55px 15% 10px;
+}
+
+.real-estate-summary > .real-estate-paragraph {
+  padding-bottom: 10px;
+}
+
+.real-estate-services {
+  padding-top: 50px;
+}
+
+.real-estate-service {
+  padding-bottom: 25px;
+}
+
+.real-estate-service-content {
+  display: flex;
+  column-gap: 70px;
+}
+
+.real-estate-contact {
+  padding: 120px 0px 200px;
+  text-align: center;
+}
+
+.real-estate-contact > .MuiButton-root {
+  min-width: 130px;
+  height: 55px;
+  color: #fff;
+  padding: 15px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #171717;
+  background: #171717;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.real-estate-contact .MuiButton-root:hover {
+  color: #ffffff;
+  background-color: black;
+}
+
+.article-divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #dddddd;
+  margin-bottom: 15px;
+  color: #dddddd;
+}
+
+.real-estate-container {
+  min-height: 500px;
+  padding: 25px 15%;
+  font: 500 18px 'Libre Franklin', sans-serif;
+}
+
+.real-estate-list {
+  padding: 20px 0px 20px 30px;
+}
+
+.real-estate-list-item > .MuiTypography-body2 {
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1470px) {
+  .real-estate {
+    padding: 55px 5% 10px;
+  }
+
+  .real-estate-container {
+    padding: 25px 3%;
+  }
+
+  .real-estate-service-content {
+    display: block;
+  }
+
+  .real-estate-service-content > img {
+    width: 380px;
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .real-estate {
+    padding: 55px 5% 10px;
+  }
+
+  .real-estate-container {
+    padding: 25px 3%;
+  }
+
+  .real-estate-service-content > img {
+    width: 380px !important;
+  }
+}

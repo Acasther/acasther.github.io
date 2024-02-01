@@ -1,59 +1,57 @@
 {
-  "main": {
-    "accordions": [
-      {
-        "title": "immigration.residencyRetired.title",
-        "desc": "immigration.residencyRetired.description"
-      },
-      {
-        "title": "immigration.residencyFixed.title",
-        "desc": "immigration.residencyFixed.description"
-      },
-      {
-        "title": "immigration.residencyInvestors.title",
-        "desc": "immigration.residencyInvestors.description"
-      },
-      {
-        "title": "immigration.residencyMarriage.title",
-        "desc": "immigration.residencyMarriage.description"
-      },
-      {
-        "title": "immigration.residencyParents.title",
-        "desc": "immigration.residencyParents.description"
-      },
-      {
-        "title": "immigration.residencyEntrepeneurs.title",
-        "desc": "immigration.residencyEntrepeneurs.description"
-      },
-      {
-        "title": "immigration.residencyForeign.title",
-        "desc": "immigration.residencyForeign.description"
-      }
-    ],
-    "requirementList": [
-      "immigration.requirements.list.verification",
-      "immigration.requirements.list.check",
-      "immigration.requirements.list.birth",
-      "immigration.requirements.list.application",
-      "immigration.requirements.list.cover",
-      "immigration.requirements.list.fingerprints",
-      "immigration.requirements.list.certify",
-      "immigration.requirements.list.registration",
-      "immigration.requirements.list.passport",
-      "immigration.requirements.list.fees"
-    ],
-    "notesList": [
-      "immigration.requirements.notes.list.translated",
-      "immigration.requirements.notes.list.apostille",
-      "immigration.requirements.notes.list.legislation",
-      "immigration.requirements.notes.list.certificate",
-      "immigration.requirements.notes.list.check"
-    ],
-    "processList": [
-      "immigration.process.table.notes.list.application",
-      "immigration.process.table.notes.list.review",
-      "immigration.process.table.notes.list.driver",
-      "immigration.process.table.notes.list.leave"
-    ]
-  }
+  "accordions": [
+    {
+      "title": "immigration.residencyRetired.title",
+      "desc": "immigration.residencyRetired.description"
+    },
+    {
+      "title": "immigration.residencyFixed.title",
+      "desc": "immigration.residencyFixed.description"
+    },
+    {
+      "title": "immigration.residencyInvestors.title",
+      "desc": "immigration.residencyInvestors.description"
+    },
+    {
+      "title": "immigration.residencyMarriage.title",
+      "desc": "immigration.residencyMarriage.description"
+    },
+    {
+      "title": "immigration.residencyParents.title",
+      "desc": "immigration.residencyParents.description"
+    },
+    {
+      "title": "immigration.residencyEntrepeneurs.title",
+      "desc": "immigration.residencyEntrepeneurs.description"
+    },
+    {
+      "title": "immigration.residencyForeign.title",
+      "desc": "immigration.residencyForeign.description"
+    }
+  ],
+  "requirementList": [
+    "immigration.requirements.list.verification",
+    "immigration.requirements.list.check",
+    "immigration.requirements.list.birth",
+    "immigration.requirements.list.application",
+    "immigration.requirements.list.cover",
+    "immigration.requirements.list.fingerprints",
+    "immigration.requirements.list.certify",
+    "immigration.requirements.list.registration",
+    "immigration.requirements.list.passport",
+    "immigration.requirements.list.fees"
+  ],
+  "notesList": [
+    "immigration.requirements.notes.list.translated",
+    "immigration.requirements.notes.list.apostille",
+    "immigration.requirements.notes.list.legislation",
+    "immigration.requirements.notes.list.certificate",
+    "immigration.requirements.notes.list.check"
+  ],
+  "processList": [
+    "immigration.process.table.notes.list.application",
+    "immigration.process.table.notes.list.review",
+    "immigration.process.table.notes.list.driver",
+    "immigration.process.table.notes.list.leave"
+  ]
 }

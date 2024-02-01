@@ -2,16 +2,16 @@ import './Immigration.css';
 import { Banner } from '../../components';
 import immigrationBackground from '../../assets/images/immigration.jpg';
 import immigrationData from '../../assets/data/immigration.json';
-import { Typography, Accordion, AccordionSummary, AccordionDetails, useTheme, useMediaQuery  } from '@mui/material';
+import { Typography, Accordion, AccordionSummary, AccordionDetails, useTheme  } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useTranslation, Trans } from 'react-i18next';
 import { useSelector } from "react-redux";
 
 const Immigration = () => {
   const [t, i18n] = useTranslation("global");
-  const accordions = immigrationData.main.accordions;
-  const reqList = immigrationData.main.requirementList;
-  const notesList = immigrationData.main.notesList;
+  const accordions = immigrationData.accordions;
+  const reqList = immigrationData.requirementList;
+  const notesList = immigrationData.notesList;
 
   const theme = useTheme({
     breakpoints: {

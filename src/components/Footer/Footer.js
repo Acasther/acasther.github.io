@@ -54,7 +54,7 @@ const Footer = () => {
         {/* Info Grid */}
         <Grid item xs={12} sm={4}>
           <div className='contact-info'>
-            {/* <img src={logo} alt="logo" className='contact-logo' /> */}
+            {!contactPage && <img src={logo} alt="logo" className='contact-logo' />}
             <Typography variant='h3' sx={{ color: '#99A7CA', fontSize: '34px'}}>{t("contact.phone")}</Typography>
             <Link underline='none' sx={{ color: '#FFFFFF'}} href="tel:+50683908070">
               <Typography variant='body1' sx={{ paddingBottom: 7}}>+506 8390-8070</Typography>

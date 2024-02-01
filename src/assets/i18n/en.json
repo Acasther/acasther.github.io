@@ -6,13 +6,15 @@
     "readMore": "Read More",
     "learnMore": "Learn More",
     "services": "Our Services",
-    "submit": "Submit"
+    "submit": "Submit",
+    "readyMove": "Ready to make a move?"
   },
   "contact": {
     "email": "Email",
     "phone": "Phone",
     "social": "Social",
-    "title": "Contact"
+    "title": "Contact",
+    "contactNow": "Contact us now"
   },
   "home": {
     "aboutUs": {
@@ -141,8 +143,23 @@
     "insurance": "Insurance",
     "realEstate": "Real Estate"
   },
-  "loremIpsum": {
-    "large": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "small": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "realEstate": {
+    "titleCR": "Real Estate in Costa Rica",
+    "summary": {
+      "paragraph1": "The Real Estate and Business team is made up of dedicated, international professionals whose main mission is to protect our clients’ investment and livelihood. We help new and seasoned expats with many aspects of owning property including rentals, home, car and boat purchases, taxes, title protection, escrow and development. Want to rent your home as an AirBnb? We can help. Dream of developing land into high end homes or a beachfront hotel? We can help there, too.",
+      "paragraph2": "Our Business Division handles the establishment and compliance of corporations, taxes, employer compliance with CAJA, estate planning, registrations of foreign businesses in Costa Rica and so much more.",
+      "paragraph3": "Costa Rica’s systems are notoriously complicated, but the Business and Real Estate teams work to give you peace of mind.<br>Our staff works hand in hand to ensure that what you are looking to do with the investment you make is well protected and meets your long-term needs. Feel free to contact us with a question or concern. We are always here to help."
+    },
+    "services": {
+      "title": "Real Estate Services",
+      "property": {
+        "title": "Buying or Selling a Property",
+        "description": "Looking to buy or sell a property? Our team of experienced and dedicated legal professionals is well-versed in the local real estate laws and regulations, ensuring a seamless and secure process for our clients.<br>What sets us apart is our strategic alliances with key players in the real estate industry, including reputable realtors, property developers, and financial institutions. These alliances enable us to offer a holistic approach to real estate transactions, providing you with a one-stop solution for all your legal and logistical needs."
+      },
+      "car": {
+        "title": "Buying or Selling a Car",
+        "description": "Looking to buy or sell a car? Navigating the complexities of buying or selling a car in a foreign market requires a trusted legal ally, and that's where we come in. Our dedicated team of legal professionals possesses in-depth knowledge of Costa Rican automotive regulations, ensuring that every aspect of your transaction is handled with diligence and compliance."
+      }
+    }
   }
 }

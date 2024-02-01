@@ -6,13 +6,15 @@
     "readMore": "Leer más",
     "learnMore": "Conocer más",
     "services": "Nuestros servicios",
-    "submit": "Enviar"
+    "submit": "Enviar",
+    "readyMove": "¿Listo para dar el paso?"
   },
   "contact": {
     "email": "Correo electrónico",
     "phone": "Teléfono",
     "social": "Redes sociales",
-    "title": "Contacto"
+    "title": "Contacto",
+    "contactNow": "Contáctenos ya"
   },
   "home": {
     "aboutUs": {
@@ -103,5 +105,25 @@
     "immigration": "Inmigración",
     "insurance": "Seguros",
     "realEstate": "Bienes raíces"
+  },
+  "realEstate": {
+    "titleCR": "Bienes Raíces en Costa Rica",
+    "summary": {
+      "paragraph1": "El equipo de Bienes Raíces y Negocios está formado por profesionales dedicados e internacionales cuya misión principal es proteger la inversión y el sustento de nuestros clientes. Ayudamos a expatriados nuevos y experimentados con muchos aspectos de ser propietarios, incluyendo alquileres, compras de casas, autos y embarcaciones, impuestos, protección de títulos, fideicomisos y desarrollo. ¿Quiere alquilar su casa en Airbnb? Podemos ayudar. ¿Sueña con desarrollar terrenos en viviendas de alta gama o un hotel frente al mar? También podemos ayudar allí.",
+      "paragraph2": "Nuestra División de Negocios se encarga del establecimiento y cumplimiento de corporaciones, impuestos, cumplimiento del empleador con la CCSS, planificación patrimonial, registros de empresas extranjeras en Costa Rica y mucho más.",
+      "paragraph3": "Los sistemas de Costa Rica son conocidos por ser complicados, pero los equipos de Negocios y Bienes Raíces trabajan para brindarle tranquilidad.<br>Nuestro personal trabaja de la mano para asegurarse de que lo que desea hacer con la inversión que realiza esté bien protegido y cumpla con sus necesidades a largo plazo. No dude en contactarnos con una pregunta o inquietud. Siempre estamos aquí para ayudar."
+    },
+    "services": {
+      "title": "Servicios de Bienes Raíces",
+      "property": {
+        "title": "Compra o Venta de Propiedades",
+        "description": "¿Busca comprar o vender una propiedad? Nuestro equipo de profesionales legales experimentados y dedicados está bien versado en las leyes y regulaciones locales de bienes raíces, garantizando un proceso sin problemas y seguro para nuestros clientes.<br>Lo que nos distingue son nuestras alianzas estratégicas con actores clave en la industria inmobiliaria, incluyendo agentes inmobiliarios de renombre, desarrolladores de propiedades e instituciones financieras. Estas alianzas nos permiten ofrecer un enfoque integral para las transacciones inmobiliarias, brindándole una solución integral para todas sus necesidades legales y logísticas."
+      },
+      "car": {
+        "title": "Compra o Venta de Autos",
+        "description": "¿Busca comprar o vender un automóvil? Navegar por las complejidades de comprar o vender un automóvil en un mercado extranjero requiere un aliado legal de confianza, y ahí es donde intervenimos. Nuestro equipo dedicado de profesionales legales posee un conocimiento profundo de las regulaciones automotrices de Costa Rica, garantizando que cada aspecto de su transacción se maneje con diligencia y cumplimiento."
+      }
+    }
   }
+  
 }
