@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
 import i18n from "i18next";
 import { initReactI18next, I18nextProvider } from "react-i18next";
+import { Provider } from "react-redux";
+import store from './store';
 import ScrollToTop from './utils/ScrollToTop';
 import './index.css';
 import App from './App';
@@ -26,11 +28,13 @@ i18n.use(initReactI18next).init({
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HashRouter>
-      <I18nextProvider i18n={i18n}>
-        <ScrollToTop />
-        <App />
-      </I18nextProvider>
-    </HashRouter>
+    <Provider store={store}>
+      <HashRouter>
+        <I18nextProvider i18n={i18n}>
+          <ScrollToTop />
+          <App />
+        </I18nextProvider>
+      </HashRouter>
+    </Provider>
   </React.StrictMode>
 );

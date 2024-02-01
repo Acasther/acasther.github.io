@@ -5,6 +5,7 @@ import immigrationData from '../../assets/data/immigration.json';
 import { Typography, Accordion, AccordionSummary, AccordionDetails, useTheme, useMediaQuery  } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useTranslation, Trans } from 'react-i18next';
+import { useSelector } from "react-redux";
 
 const Immigration = () => {
   const [t, i18n] = useTranslation("global");
@@ -20,7 +21,7 @@ const Immigration = () => {
     }
   });
 
-  const isMobile = useMediaQuery(theme.breakpoints.down('lg'));
+  const isMobile = useSelector(state => state.mobile.isMobile);
 
   return (
     <>

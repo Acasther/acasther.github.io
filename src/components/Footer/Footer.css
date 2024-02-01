@@ -46,6 +46,12 @@
   color: #212529
 }
 
+.footer-location {
+  display: flex;
+  column-gap: 10px;
+  width: fit-content;
+}
+
 @media screen and (max-width: 1024px) {
   .contact {
     padding: 130px 2% 100px 2%;
@@ -96,5 +102,11 @@
     min-width: none;
     padding: 5px 9px;
     font-size: 17px;
+  }
+  .footer-left {
+    text-align: center;
+  }
+  .footer-location {
+    text-align: left;
   }
 }

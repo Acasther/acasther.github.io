@@ -10,11 +10,14 @@ import { Sidebar } from '../Sidebar/Sidebar';
 import { KeyboardArrowDown } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { useSelector, useDispatch } from "react-redux";
+import { mobileActions } from '../../store/mobile-slice';
 
 const Navbar = () => {
   const [t, i18n] = useTranslation("global");
   const location = useLocation();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [lang, setLang] = useState('en');
@@ -69,7 +72,8 @@ const Navbar = () => {
     }
   });
 
-  const isMobile = useMediaQuery(theme.breakpoints.down('lg'));
+  dispatch(mobileActions.change({ changeToMobile: useMediaQuery(theme.breakpoints.down('lg')) }))
+  const isMobile = useSelector(state => state.mobile.isMobile);
 
   const handleMenu = () => {
     setMenuOpen((prev) => !prev)
