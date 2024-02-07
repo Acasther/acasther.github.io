@@ -2,7 +2,7 @@ import React from 'react';
 import './RealEstate.css';
 import realEstateBackground from '../../assets/images/real_estate.jpg';
 import data from "../../assets/data/realEstate";
-import { Banner } from '../../components';
+import Banner from '../../components/Banner/Banner';
 import { useTranslation, Trans } from 'react-i18next';
 import { Typography, Button  } from '@mui/material';
 import { useNavigate } from "react-router-dom";

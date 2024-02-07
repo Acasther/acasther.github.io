@@ -1,5 +1,5 @@
 import "./Contact.css";
-import { Banner } from '../../components';
+import Banner from '../../components/Banner/Banner';
 import immigrationBackground from '../../assets/images/immigration.jpg';
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';

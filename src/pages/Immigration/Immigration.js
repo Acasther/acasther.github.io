@@ -1,5 +1,5 @@
 import './Immigration.css';
-import { Banner } from '../../components';
+import Banner from '../../components/Banner/Banner';
 import immigrationBackground from '../../assets/images/immigration.jpg';
 import immigrationData from '../../assets/data/immigration.json';
 import { Typography, Accordion, AccordionSummary, AccordionDetails, useTheme  } from '@mui/material';

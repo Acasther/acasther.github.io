@@ -1,7 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './utils/theme';
-import { Navbar, Footer } from './components';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import Legal from './pages/Legal/Legal';
 import Immigration from './pages/Immigration/Immigration';
