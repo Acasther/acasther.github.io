@@ -1,5 +1,5 @@
 import './Navbar.css';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { AppBar, Toolbar, IconButton, Select, FormControl, Stack, Link, Fade, useMediaQuery, useTheme, Box, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -23,33 +23,33 @@ const Navbar = () => {
   const [lang, setLang] = useState('en');
   const [activeTab, setActiveTab] = useState('');
   
-  const pages = [
+  const pages = useMemo(() => [
     {
-      "id": "home",
-      "name": t("links.home"),
-      "link": "/"
+      id: "home",
+      name: t("links.home"),
+      link: "/"
     },
     {
-      "id": "immigration",
-      "name": t("links.immigration"),
-      "link": "/immigration"
+      id: "immigration",
+      name: t("links.immigration"),
+      link: "/immigration"
     },
     {
-      "id": "realEstate",
-      "name": t("links.realEstate"),
-      "link": "/real-estate"
+      id: "realEstate",
+      name: t("links.realEstate"),
+      link: "/real-estate"
     },
     {
-      "id": "insurance",
-      "name": t("links.insurance"),
-      "link": "/insurance"
+      id: "insurance",
+      name: t("links.insurance"),
+      link: "/insurance"
     },
     {
-      "id": "contact",
-      "name": t("links.contactUs"),
-      "link": "/contact"
+      id: "contact",
+      name: t("links.contactUs"),
+      link: "/contact"
     }
-  ];
+  ], [t]);
 
   const languages = [
     {

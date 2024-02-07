@@ -29,7 +29,7 @@ const RealEstate = () => {
             <span className='article-divider'></span>
             <div className='real-estate-service-content'>
               <Typography variant='body2'><Trans i18nKey={item.desc}>{t(item.desc)}</Trans></Typography>
-              <img src={item.image} width={650} />
+              <img src={item.image} width={650} alt="Content"/>
             </div>
           </div>
         ))}

@@ -2,7 +2,7 @@ import './Immigration.css';
 import Banner from '../../components/Banner/Banner';
 import immigrationBackground from '../../assets/images/immigration.jpg';
 import immigrationData from '../../assets/data/immigration.json';
-import { Typography, Accordion, AccordionSummary, AccordionDetails, useTheme  } from '@mui/material';
+import { Typography, Accordion, AccordionSummary, AccordionDetails  } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useTranslation, Trans } from 'react-i18next';
 import { useSelector } from "react-redux";
@@ -12,14 +12,6 @@ const Immigration = () => {
   const accordions = immigrationData.accordions;
   const reqList = immigrationData.requirementList;
   const notesList = immigrationData.notesList;
-
-  const theme = useTheme({
-    breakpoints: {
-      values: {
-        lg: 1000
-      },
-    }
-  });
 
   const isMobile = useSelector(state => state.mobile.isMobile);
 

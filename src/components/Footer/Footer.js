@@ -5,7 +5,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Button, Grid, IconButton, Stack, TextField, Typography, Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { useNavigate, useLocation, redirect } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { sendContactEmail } from "../../api/email";
 import './Footer.css';
 
