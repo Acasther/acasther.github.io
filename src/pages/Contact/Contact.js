@@ -1,13 +1,32 @@
 import "./Contact.css";
 import { Banner } from '../../components';
 import immigrationBackground from '../../assets/images/immigration.jpg';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Grid from "@mui/material/Unstable_Grid2";
-import { Stack, Typography, TextField, Button } from "@mui/material"; 
+import ReCAPTCHA from "react-google-recaptcha";
+import { Stack, Typography, TextField, Button } from "@mui/material";
+import { sendContactEmail } from "../../api/email";
 
 const Contact = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t, i18n]  = useTranslation("global");
+  const reCaptchaRef = React.createRef();
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const submitContactForm = async() => {
+    console.log('ReCaptchaRef', reCaptchaRef);
+    if (reCaptchaRef.current.getValue()) {
+      const res = await sendContactEmail(name, email, message, `${name} ${t('contact.hasSentMessage')}`);
+      console.log('Response (Contact.js)', res);
+    }
+  }
+
+  const reCaptchaOnChange = (value) => {
+    console.log('Captcha vaule', value);
+  }
 
   return (
     <>
@@ -18,13 +37,27 @@ const Contact = () => {
           <Typography variant='h2'>{t("links.contactUs")}</Typography>
           <span className='article-divider'></span>
           <Stack spacing={3} className="contact-stack">
-            <TextField required color='info' sx={{ background: '#FFFFFF', width: `500px`, marginTop: 2 }} label={t("common.name")} variant='outlined' size='medium' />
-            <TextField required sx={{ background: '#FFFFFF', width: `500px`, marginTop: 2, accentColor: '#99A7CA' }} label={t("contact.email")} variant='outlined' size='medium' />
-            <TextField required 
+            <TextField required color='info' sx={{ background: '#FFFFFF', width: `500px`, marginTop: 2 }} label={t("common.name")} variant='outlined' size='medium'
+              value={name}
+              onChange={(event) => {
+                setName(event.target.value);
+              }} />
+            <TextField required sx={{ background: '#FFFFFF', width: `500px`, marginTop: 2, accentColor: '#99A7CA' }} label={t("contact.email")} variant='outlined' size='medium'
+              value={email}
+              onChange={(event) => {
+                setEmail(event.target.value);
+              }} />
+            <TextField required
               sx={{ background: '#FFFFFF', width: `500px`, marginTop: 2 }} 
-              label={t("common.message")} variant='outlined' size='medium' multiline={true} minRows={9} />
-            <div className='submit-btn'>
-              <Button sx={{ textTransform: 'none', width: 130}}>{t("common.submit")}</Button>
+              label={t("common.message")} variant='outlined' size='medium' multiline={true} minRows={9}
+              value={message}
+              onChange={(event) => {
+                setMessage(event.target.value);
+              }} />
+            <div className='contact-submit-btn'>
+              <ReCAPTCHA ref={reCaptchaRef} className="contact-recaptcha" sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+                onChange={reCaptchaOnChange} hl={i18n.language} />
+              <Button sx={{ textTransform: 'none', width: '100%'}} onClick={() => submitContactForm()}>{t("common.submit")}</Button>
             </div>
           </Stack>
         </Grid>
@@ -32,13 +65,13 @@ const Contact = () => {
           <div className='location-map'>
             <Typography variant="h2">San José, Costa Rica</Typography>
             <span className='article-divider'></span>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491.24768568894433!2d-84.13277344849534!3d9.935498188093286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fda0a0d22a9f%3A0x4c65f0b3a1e30ccb!2sEdificio%20Monterrico!5e0!3m2!1sen!2scr!4v1706296702025!5m2!1sen!2scr" width="100%" height="465" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491.2476583364029!2d-84.1330552236084!3d9.935516400548698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fd2eb06f74ad%3A0x37de80cc38ee1a24!2sCosta%20Legal!5e0!3m2!1sen!2scr!4v1707262689628!5m2!1sen!2scr" width="600" height="450" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
             <Typography variant='h3' sx={{ paddingTop: '20px'}}>Escazú</Typography>
             <Typography variant='body1'>Trejos Montealegre, San Rafael de Escazú, San José</Typography>
             <Typography variant='body1'>Edificio Monterrico, {t("home.location.floor")}</Typography>
 
-            <Typography variant='body1' style={{ paddingTop: '15px'}}>{t("contact.phone")}: +506 8390-8070</Typography>
+            <Typography variant='body1' style={{ paddingTop: '15px'}}>{t("contact.phone")}: +506 2100-4465</Typography>
             <Typography variant='body1'>{t("contact.email")}: info@costalegalcr.com</Typography>
           </div>
         </Grid>

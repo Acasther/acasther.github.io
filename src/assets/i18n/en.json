@@ -14,7 +14,11 @@
     "phone": "Phone",
     "social": "Social",
     "title": "Contact",
-    "contactNow": "Contact us now"
+    "contactNow": "Contact us now",
+    "hasSentMessage": "has sent you a message through Costa Legal",
+    "template": {
+      "sentMessage": "has sent you a message"
+    }
   },
   "home": {
     "aboutUs": {

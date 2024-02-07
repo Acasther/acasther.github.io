@@ -14,7 +14,11 @@
     "phone": "Teléfono",
     "social": "Redes sociales",
     "title": "Contacto",
-    "contactNow": "Contáctenos ya"
+    "contactNow": "Contáctenos ya",
+    "hasSentMessage": "te ha enviado un mensaje a través de Costa Legal",
+    "template": {
+      "sentMessage": "te ha enviado un mensaje"
+    }
   },
   "home": {
     "aboutUs": {

@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const [t, i18n] = useTranslation("global");
+  const { t } = useTranslation("global");
   const navigate = useNavigate();
 
   return (
@@ -57,11 +57,11 @@ const Home = () => {
           <Typography variant='body1'>Trejos Montealegre, San Rafael de Escazú, San José</Typography>
           <Typography variant='body1'>Edificio Monterrico, {t("home.location.floor")}</Typography>
 
-          <Typography variant='body1' style={{ paddingTop: '15px'}}>{t("contact.phone")}: +506 8390-8070</Typography>
+          <Typography variant='body1' style={{ paddingTop: '15px'}}>{t("contact.phone")}: +506 2100-4465</Typography>
           <Typography variant='body1'>{t("contact.email")}: info@costalegalcr.com</Typography>
         </div>
         <div className='location-map'>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491.24768568894433!2d-84.13277344849534!3d9.935498188093286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fda0a0d22a9f%3A0x4c65f0b3a1e30ccb!2sEdificio%20Monterrico!5e0!3m2!1sen!2scr!4v1706296702025!5m2!1sen!2scr" width="600" height="450" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491.2476583364029!2d-84.1330552236084!3d9.935516400548698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fd2eb06f74ad%3A0x37de80cc38ee1a24!2sCosta%20Legal!5e0!3m2!1sen!2scr!4v1707262689628!5m2!1sen!2scr" width="600" height="450" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>

@@ -6,13 +6,23 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Button, Grid, IconButton, Stack, TextField, Typography, Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation, redirect } from "react-router-dom";
+import { sendContactEmail } from "../../api/email";
 import './Footer.css';
 
 const Footer = () => {
-  const [t, i18n] = useTranslation("global");
+  const { t } = useTranslation("global");
   const location = useLocation();
 
   const [contactPage, setContactPage] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const submitContactForm = async() => {
+    console.log('Sending Email!!');
+    const res = await sendContactEmail(name, email, message, `${name} ${t('contact.hasSentMessage')}`);
+    console.log('Response (Contact.js)', res);
+  }
 
   useEffect(() => {
     const currentPath = location.pathname.endsWith('/') ? location.pathname.slice(0, -1) : location.pathname;
@@ -38,13 +48,25 @@ const Footer = () => {
             <>
             <Typography variant='h2'>{t("common.getInTouch")}</Typography>
             <Stack spacing={3}>
-              <TextField required color='info' sx={{ background: '#e6e6e6', width: `500px`, marginTop: 2, accentColor: '#99A7CA' }} label={t("common.name")} variant='filled' size='medium' />
-              <TextField required sx={{ background: '#e6e6e6', width: `500px`, marginTop: 2, accentColor: '#99A7CA' }} label={t("contact.email")} variant='filled' size='medium' />
+              <TextField required color='info' sx={{ background: '#e6e6e6', width: `500px`, marginTop: 2, accentColor: '#99A7CA' }} label={t("common.name")} variant='filled' size='medium'
+                value={name}
+                onChange={(event) => {
+                  setName(event.target.value);
+                }} />
+              <TextField required sx={{ background: '#e6e6e6', width: `500px`, marginTop: 2, accentColor: '#99A7CA' }} label={t("contact.email")} variant='filled' size='medium'
+                value={email}
+                onChange={(event) => {
+                  setEmail(event.target.value);
+                }} />
               <TextField required 
                 sx={{ background: '#e6e6e6', width: `500px`, marginTop: 2, accentColor: '#99A7CA' }} 
-                label={t("common.message")} variant='filled' size='medium' multiline={true} minRows={6} />
+                label={t("common.message")} variant='filled' size='medium' multiline={true} minRows={6}
+                value={message}
+                onChange={(event) => {
+                  setMessage(event.target.value);
+                }} />
               <div className='submit-btn'>
-                <Button sx={{ textTransform: 'none', width: 130}}>{t("common.submit")}</Button>
+                <Button sx={{ textTransform: 'none', width: 130}} onClick={() => submitContactForm()}>{t("common.submit")}</Button>
               </div>
             </Stack>
             </>
@@ -57,7 +79,7 @@ const Footer = () => {
             {!contactPage && <img src={logo} alt="logo" className='contact-logo' />}
             <Typography variant='h3' sx={{ color: '#99A7CA', fontSize: '34px'}}>{t("contact.phone")}</Typography>
             <Link underline='none' sx={{ color: '#FFFFFF'}} href="tel:+50683908070">
-              <Typography variant='body1' sx={{ paddingBottom: 7}}>+506 8390-8070</Typography>
+              <Typography variant='body1' sx={{ paddingBottom: 7}}>+506 2100-4465</Typography>
             </Link>
 
             <Typography variant='h3' sx={{ color: '#99A7CA', fontSize: '34px'}}>{t("contact.email")}</Typography>

@@ -9,6 +9,38 @@
   width: 100%;
 }
 
+.contact-submit-btn {
+  justify-content: center;
+  display: grid;
+}
+
+.contact-recaptcha {
+  padding: 10px 0px 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.contact-submit-btn > .MuiButton-root {
+  min-width: 130px;
+  height: 55px;
+  color: #fff;
+  padding: 15px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #171717;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.contact-submit-btn .MuiButton-root:hover {
+  background: #323232;
+}
+
 @media screen and (max-width: 1024px) {
   .contact-container {
     width: 95%;

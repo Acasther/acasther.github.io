@@ -8,7 +8,7 @@ import { Typography, Button  } from '@mui/material';
 import { useNavigate } from "react-router-dom";
 
 const RealEstate = () => {
-  const [t, i18n] = useTranslation("global");
+  const { t } = useTranslation("global");
   const navigate = useNavigate();
 
   return (

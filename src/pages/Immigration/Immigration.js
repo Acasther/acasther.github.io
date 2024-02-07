@@ -8,7 +8,7 @@ import { useTranslation, Trans } from 'react-i18next';
 import { useSelector } from "react-redux";
 
 const Immigration = () => {
-  const [t, i18n] = useTranslation("global");
+  const { t } = useTranslation("global");
   const accordions = immigrationData.accordions;
   const reqList = immigrationData.requirementList;
   const notesList = immigrationData.notesList;
