@@ -20,7 +20,7 @@ export const contactTemplate = (name, email, message) => {
                       <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation" style="background-color:#000000;display:flex;padding:20px 0px;align-items:center;justify-content:center">
                         <tbody>
                           <tr>
-                            <td></td>
+                            <td><img alt="logo" src="https://costalegalcr.com/costa_legal_wt.png" style="display:block;outline:none;border:none;text-decoration:none;margin:0 auto;margin-bottom:16px;"/></td>
                           </tr>
                         </tbody>
                       </table>

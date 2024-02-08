@@ -17,15 +17,10 @@ const Contact = () => {
   const [message, setMessage] = useState('');
 
   const submitContactForm = async() => {
-    console.log('ReCaptchaRef', reCaptchaRef);
     if (reCaptchaRef.current.getValue()) {
       const res = await sendContactEmail(name, email, message, `${name} ${t('contact.hasSentMessage')}`);
       console.log('Response (Contact.js)', res);
     }
-  }
-
-  const reCaptchaOnChange = (value) => {
-    console.log('Captcha vaule', value);
   }
 
   return (
@@ -56,7 +51,7 @@ const Contact = () => {
               }} />
             <div className='contact-submit-btn'>
               <ReCAPTCHA ref={reCaptchaRef} className="contact-recaptcha" sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
-                onChange={reCaptchaOnChange} hl={i18n.language} />
+                hl={i18n.language} />
               <Button sx={{ textTransform: 'none', width: '100%'}} onClick={() => submitContactForm()}>{t("common.submit")}</Button>
             </div>
           </Stack>
