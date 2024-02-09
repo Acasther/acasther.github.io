@@ -17,7 +17,7 @@ const Insurance = () => {
     <Banner bannerImage={insuranceBackground} title={t("home.insurance.title")} />
     <div className='insurance-partner-container'>
       <Typography variant='h2' sx={{ color: '#FFFFFF'}}>{t("insurance.partner")}</Typography>
-      <img src={insLogo} />
+      <img src={insLogo} alt="INS" />
     </div>
     <div className='insurance'>
       <div className='insurance-summary'>
