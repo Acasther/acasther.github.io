@@ -1,9 +1,8 @@
 .top-banner {
-  margin-top: -110px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 40% 60%;
-  min-height: 500px;
+  min-height: 380px;
   width: 100%;
   align-items: center;
   justify-content: center;

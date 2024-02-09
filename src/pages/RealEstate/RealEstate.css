@@ -35,7 +35,7 @@
   position: relative;
   outline: none;
   border-radius: 5px;
-  border: 2px solid #171717;
+  border: none;
   background: #171717;
   font-size: 20px;
   text-transform: uppercase;
@@ -43,7 +43,7 @@
 
 .real-estate-contact .MuiButton-root:hover {
   color: #ffffff;
-  background-color: black;
+  background: #323232;
 }
 
 .article-divider {

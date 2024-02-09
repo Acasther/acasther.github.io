@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../assets/logos/costa_legal_wt.png';
+import { PHONE_NUMBER, EMAIL_ADDRESS, OFFICE_LOCATION, OFFICE_BUILDING } from '../../utils/constants';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -17,11 +18,9 @@ const Footer = () => {
         <Grid item xs={8} className='contact-form'>
           <div className='footer-left'>
             <img src={logo} alt="logo" className='contact-logo' />
-            <Link className='footer-location' underline='none' sx={{ cursor: 'pointer' }} onClick={() => window.open("https://maps.app.goo.gl/dyZssRASjqPcViRSA", "_blank")} >
+            <Link className='footer-location' underline='none' sx={{ cursor: 'pointer' }} onClick={() => window.open("https://maps.app.goo.gl/WyTyBSpMBhj5M1Sb8", "_blank")} >
               <LocationOnIcon sx={{ fontSize: '1.9rem', color: '#FFFFFF'}} />
-              <Typography variant='body1' sx={{ color: '#FFFFFF'}}>
-                Escazú, San José. Edificio Monterrico, {t("home.location.floor")}
-              </Typography>
+              <Typography variant='body1' sx={{ color: '#FFFFFF'}}>{OFFICE_LOCATION}. {OFFICE_BUILDING}, {t("home.location.floor")}</Typography>
             </Link>
           </div>
         </Grid>
@@ -30,13 +29,13 @@ const Footer = () => {
         <Grid item xs={12} sm={4}>
           <div className='contact-info'>
             <Typography variant='h3' sx={{ color: '#99A7CA', fontSize: '34px'}}>{t("contact.phone")}</Typography>
-            <Link underline='none' sx={{ color: '#FFFFFF'}} href="tel:+50683908070">
-              <Typography variant='body1' sx={{ paddingBottom: 7}}>+506 2100-4465</Typography>
+            <Link underline='none' sx={{ color: '#FFFFFF'}} href="tel:+50621004465">
+              <Typography variant='body1' sx={{ paddingBottom: 7}}>{PHONE_NUMBER}</Typography>
             </Link>
 
             <Typography variant='h3' sx={{ color: '#99A7CA', fontSize: '34px'}}>{t("contact.email")}</Typography>
-            <Link underline='none' sx={{ color: '#FFFFFF'}} href="mailto:info@costalegalcr.com">
-              <Typography variant='body1' sx={{ paddingBottom: 7}}>info@costalegalcr.com</Typography>
+            <Link underline='none' sx={{ color: '#FFFFFF'}} href={`mailto:${EMAIL_ADDRESS}`}>
+              <Typography variant='body1' sx={{ paddingBottom: 7}}>{EMAIL_ADDRESS}</Typography>
             </Link>
 
             <Typography variant='h3' sx={{ color: '#99A7CA', fontSize: '34px'}}>{t("contact.social")}</Typography>

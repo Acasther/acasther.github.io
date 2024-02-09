@@ -7,7 +7,8 @@
     "learnMore": "Learn More",
     "services": "Our Services",
     "submit": "Submit",
-    "readyMove": "Ready to make a move?"
+    "readyMove": "Ready to make a move?",
+    "moreInfo": "Need more information?"
   },
   "contact": {
     "email": "Email",
@@ -163,6 +164,34 @@
       "car": {
         "title": "Buying or Selling a Car",
         "description": "Looking to buy or sell a car? Navigating the complexities of buying or selling a car in a foreign market requires a trusted legal ally, and that's where we come in. Our dedicated team of legal professionals possesses in-depth knowledge of Costa Rican automotive regulations, ensuring that every aspect of your transaction is handled with diligence and compliance."
+      }
+    }
+  },
+  "insurance": {
+    "titleCR": "Insurance in Costa Rica",
+    "partner": "Partnered with",
+    "summary": {
+      "paragraph1": "With over two decades of dedicated service in the insurance industry, we take immense pride in offering comprehensive coverage and personalized solutions to safeguard your valuable assets and secure your peace of mind.",
+      "paragraph2": "Our longstanding affiliation with the Instituto Nacional de Seguros (INS) further solidifies our commitment to delivering top-notch insurance products and exceptional customer service. As a trusted partner of INS, we adhere to the highest standards of professionalism, reliability, and integrity, ensuring that our clients receive nothing short of excellence in every interaction.",
+      "paragraph3": "Whether you're seeking protection for your home, vehicle, business, or personal belongings, our expert team is here to tailor insurance solutions that align with your unique needs and budget. From property and casualty insurance to health and life coverage, we offer a diverse range of policies designed to mitigate risks and provide financial security for you and your loved ones."
+    },
+    "services": {
+      "title": "Insurance Types",
+      "car": {
+        "title": "Car Insurance",
+        "description": "Experience peace of mind on the road with our comprehensive car insurance coverage. Safeguard your vehicle against unforeseen accidents, theft, and damages, ensuring that you can drive with confidence knowing that you're protected. Our tailored policies offer flexible options to suit your needs and budget, backed by prompt claims processing and expert customer support. Whether you're a daily commuter or an occasional driver, trust us to provide reliable coverage that keeps you moving forward safely."
+      },
+      "home": {
+        "title": "Home Insurance",
+        "description": "Protect your most valuable asset with our reliable home insurance solutions. From protecting your property against natural disasters to safeguarding your belongings from theft and vandalism, our comprehensive policies offer peace of mind for homeowners. With customizable coverage options and responsive claim services, we ensure that your home remains a haven of security and comfort. Trust us to provide the protection you need to safeguard your investment and provide financial security for your family."
+      },
+      "medical": {
+        "title": "Medical Insurance",
+        "description": "Ensure your well-being and that of your loved ones with our comprehensive medical insurance plans. From routine check-ups to unexpected medical emergencies, our policies offer coverage for a wide range of healthcare needs. With access to an extensive network of healthcare providers and personalized support, we strive to make quality healthcare accessible and affordable for all. Rest assured that with our medical insurance coverage, you can focus on your health and recovery without worrying about the financial burden of medical expenses."
+      },
+      "disputes": {
+        "title": "Insurance Disputes",
+        "description": "With years of experience navigating the intricate legal landscape surrounding insurance disputes, our seasoned attorneys possess the knowledge and skills necessary to advocate effectively on your behalf.<br>Whether you're dealing with denied claims, coverage disputes, or issues with your insurance provider, we are committed to pursuing favorable outcomes through strategic negotiation, mediation, or litigation when necessary. Our team understands the complexities of insurance law and will work tirelessly to protect your rights and pursue the compensation you deserve."
       }
     }
   }

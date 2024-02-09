@@ -1,0 +1,101 @@
+.insurance {
+  padding: 55px 15% 10px;
+}
+
+.insurance-partner-container {
+  background-color: #000000;
+  column-gap: 70px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: end;
+  padding: 30px 0px 45px;
+}
+
+.insurance-summary > .insurance-paragraph {
+  padding-bottom: 10px;
+}
+
+.insurance-contact {
+  padding: 120px 0px 200px;
+  text-align: center;
+}
+
+.insurance-contact > .MuiButton-root {
+  min-width: 130px;
+  height: 55px;
+  color: #fff;
+  padding: 15px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #171717;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.insurance-contact .MuiButton-root:hover {
+  color: #ffffff;
+  background: #323232;
+}
+
+.insurance-services {
+  padding-top: 50px;
+}
+
+.insurance-service {
+  padding-bottom: 25px;
+}
+
+.insurance-service-content {
+  display: flex;
+  column-gap: 70px;
+}
+
+@media screen and (max-width: 1470px) {
+  .insurance {
+    padding: 55px 5% 10px;
+  }
+
+  .insurance-container {
+    padding: 25px 3%;
+  }
+
+  .insurance-service-content {
+    display: block;
+  }
+
+  .insurance-service-content > img {
+    width: 380px;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .insurance-partner-container {
+    display: block;
+    text-align: center;
+  }
+
+  .insurance-partner-container > img {
+    width: 350px;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .insurance {
+    padding: 55px 5% 10px;
+  }
+
+  .insurance-container {
+    padding: 25px 3%;
+  }
+
+  .insurance-service-content > img {
+    width: 380px !important;
+  }
+}

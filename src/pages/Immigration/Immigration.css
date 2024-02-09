@@ -25,6 +25,33 @@
   padding-bottom: 10px;
 }
 
+.immigration-contact {
+  padding: 120px 0px 200px;
+  text-align: center;
+}
+
+.immigration-contact > .MuiButton-root {
+  min-width: 130px;
+  height: 55px;
+  color: #fff;
+  padding: 15px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #171717;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.immigration-contact .MuiButton-root:hover {
+  color: #ffffff;
+  background: #323232;
+}
+
 @media screen and (max-width: 768px) {
   .immigration-summary {
     padding: 55px 5% 10px;

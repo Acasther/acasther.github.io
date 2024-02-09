@@ -2,17 +2,17 @@ import './Immigration.css';
 import Banner from '../../components/Banner/Banner';
 import immigrationBackground from '../../assets/images/immigration.jpg';
 import immigrationData from '../../assets/data/immigration.json';
-import { Typography, Accordion, AccordionSummary, AccordionDetails  } from '@mui/material';
+import { Typography, Accordion, AccordionSummary, AccordionDetails, Button  } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useTranslation, Trans } from 'react-i18next';
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Immigration = () => {
   const { t } = useTranslation("global");
-  const accordions = immigrationData.accordions;
-  const reqList = immigrationData.requirementList;
-  const notesList = immigrationData.notesList;
+  const navigate = useNavigate();
 
+  const { accordions, requirementList, notesList } = immigrationData;
   const isMobile = useSelector(state => state.mobile.isMobile);
 
   return (
@@ -45,7 +45,7 @@ const Immigration = () => {
       <Typography variant='body2'>{t("immigration.requirements.description")}</Typography>
       <div className='immigration-list'>
         <ol>
-          {reqList.map((req, idx) => (
+          {requirementList.map((req, idx) => (
             <li className='immigration-list-item' key={idx}>
               <Typography variant='body2' key={idx}><Trans i18nKey={req}>{t(req)}</Trans></Typography>
             </li>
@@ -62,6 +62,10 @@ const Immigration = () => {
           ))}
         </ul>
       </div>
+    </div>
+    <div className='immigration-contact'>
+      <Typography variant='h2' sx={{ paddingBottom: '10px'}}>{t("common.readyMove")}</Typography>
+      <Button onClick={() => navigate('/contact')}>{t("contact.contactNow")}</Button>
     </div>
     </>
   )
