@@ -34,7 +34,7 @@ const Insurance = () => {
             <span className='article-divider'></span>
             <div className='insurance-service-content'>
               <Typography variant='body2'><Trans i18nKey={item.desc} components={{ space: <span />}}>{t(item.desc)}</Trans></Typography>
-              <img src={item.image} width={650} alt="Content"/>
+              <img src={item.image} width={550} alt="Content"/>
             </div>
           </div>
         ))}
