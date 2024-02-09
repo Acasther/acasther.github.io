@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4a0091c3.css",
-    "main.js": "/static/js/main.f368bfda.js",
+    "main.js": "/static/js/main.c6eac6a4.js",
     "static/media/playa_lagosta.jpg": "/static/media/playa_lagosta.4abb6d3a2d502edf74ef.jpg",
     "static/media/immigration.jpg": "/static/media/immigration.334b888dc1bbbf082281.jpg",
     "static/media/car.jpg": "/static/media/car.9cb6beb595d485a354a4.jpg",
@@ -15,10 +15,10 @@
     "static/media/costa_legal_wt.png": "/static/media/costa_legal_wt.573a03b2d5c0213f39de.png",
     "index.html": "/index.html",
     "main.4a0091c3.css.map": "/static/css/main.4a0091c3.css.map",
-    "main.f368bfda.js.map": "/static/js/main.f368bfda.js.map"
+    "main.c6eac6a4.js.map": "/static/js/main.c6eac6a4.js.map"
   },
   "entrypoints": [
     "static/css/main.4a0091c3.css",
-    "static/js/main.f368bfda.js"
+    "static/js/main.c6eac6a4.js"
   ]
 }
