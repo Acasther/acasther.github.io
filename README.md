@@ -1,3 +1,3 @@
 # Website for Costa Legal
 
-[costalegalcr.com](https://costalegalcr.com).
+[costalegalcr.com](https://costalegalcr.com)
