@@ -4,24 +4,19 @@ import immigrationBackground from '../../assets/images/immigration.jpg';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Grid from "@mui/material/Unstable_Grid2";
-import ReCAPTCHA from "react-google-recaptcha";
 import { Stack, Typography, TextField, Button } from "@mui/material";
 import { sendContactEmail } from "../../api/email";
 import { EMAIL_ADDRESS, PHONE_NUMBER, OFFICE_LOCATION_LONG, OFFICE_BUILDING } from "../../utils/constants";
 
 const Contact = () => {
   const [t, i18n]  = useTranslation("global");
-  const reCaptchaRef = React.createRef();
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
   const submitContactForm = async() => {
-    if (reCaptchaRef.current.getValue()) {
-      const res = await sendContactEmail(name, email, message, `${name} ${t('contact.hasSentMessage')}`);
-      console.log('Response (Contact.js)', res);
-    }
+    await sendContactEmail(name, email, message, `${name} ${t('contact.hasSentMessage')}`);
   }
 
   return (
@@ -51,8 +46,6 @@ const Contact = () => {
                 setMessage(event.target.value);
               }} />
             <div className='contact-submit-btn'>
-              <ReCAPTCHA ref={reCaptchaRef} className="contact-recaptcha" sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
-                hl={i18n.language} />
               <Button sx={{ textTransform: 'none', width: '100%'}} onClick={() => submitContactForm()}>{t("common.submit")}</Button>
             </div>
           </Stack>
