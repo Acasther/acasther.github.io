@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d3ee7b93.css",
-    "main.js": "/static/js/main.c01d6bb5.js",
+    "main.css": "/static/css/main.dbc9f353.css",
+    "main.js": "/static/js/main.f1efa28e.js",
     "static/media/playa_lagosta.jpg": "/static/media/playa_lagosta.4abb6d3a2d502edf74ef.jpg",
     "static/media/immigration.jpg": "/static/media/immigration.334b888dc1bbbf082281.jpg",
     "static/media/car.jpg": "/static/media/car.9cb6beb595d485a354a4.jpg",
@@ -14,11 +14,11 @@
     "static/media/insurance2.jpg": "/static/media/insurance2.edd5d9d59b8d125a01b7.jpg",
     "static/media/costa_legal_wt.png": "/static/media/costa_legal_wt.573a03b2d5c0213f39de.png",
     "index.html": "/index.html",
-    "main.d3ee7b93.css.map": "/static/css/main.d3ee7b93.css.map",
-    "main.c01d6bb5.js.map": "/static/js/main.c01d6bb5.js.map"
+    "main.dbc9f353.css.map": "/static/css/main.dbc9f353.css.map",
+    "main.f1efa28e.js.map": "/static/js/main.f1efa28e.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3ee7b93.css",
-    "static/js/main.c01d6bb5.js"
+    "static/css/main.dbc9f353.css",
+    "static/js/main.f1efa28e.js"
   ]
 }
