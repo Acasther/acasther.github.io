@@ -1,7 +1,7 @@
 .contact-container {
   min-height: 500px;
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   padding: 150px 0px 200px;
 }
 
@@ -33,6 +33,12 @@
 
 .contact-submit-btn .MuiButton-root:hover {
   background: #323232;
+}
+
+.contact-row {
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 
 @media screen and (max-width: 1024px) {

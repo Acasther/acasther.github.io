@@ -1,10 +1,15 @@
 import './Home.css';
 import homeBackground from '../../assets/images/playa_lagosta.jpg';
 import homeData from '../../assets/data/home';
-import { Button, Typography } from '@mui/material';
+import { Button, Typography, Stack, Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from "react-router-dom";
+import Grid from "@mui/material/Unstable_Grid2";
+import Email from '@mui/icons-material/Email';
+import WhatsApp from '@mui/icons-material/WhatsApp';
+import Place from '@mui/icons-material/Place';
 import { EMAIL_ADDRESS, OFFICE_LOCATION_LONG, OFFICE_BUILDING, PHONE_NUMBER } from '../../utils/constants';
+import Info from '../../components/Info/Info';
 
 const Home = () => {
   const { t } = useTranslation("global");
@@ -50,21 +55,9 @@ const Home = () => {
 
     <section className='location'>
       <Typography variant='h2' sx={{ paddingBottom: 1 }}>{t("home.location.title")}</Typography>
-      <span className='divider' style={{ marginBottom: 15 }}></span>
+      <span className='divider' style={{ marginBottom: 55 }}></span>
 
-      <div className='location-content'>
-        <div className='location-text'>
-          <Typography variant='h3'>Escazú</Typography>
-          <Typography variant='body1'>{OFFICE_LOCATION_LONG}</Typography>
-          <Typography variant='body1'>{OFFICE_BUILDING}, {t("home.location.floor")}</Typography>
-
-          <Typography variant='body1' style={{ paddingTop: '15px'}}>{t("contact.phone")}: {PHONE_NUMBER}</Typography>
-          <Typography variant='body1'>{t("contact.email")}: {EMAIL_ADDRESS}</Typography>
-        </div>
-        <div className='location-map'>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491.2476583364029!2d-84.1330552236084!3d9.935516400548698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fd2eb06f74ad%3A0x37de80cc38ee1a24!2sCosta%20Legal!5e0!3m2!1sen!2scr!4v1707262689628!5m2!1sen!2scr" width="600" height="450" title='map' style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
+      <Info></Info>
     </section>
     </>
   )
