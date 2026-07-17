@@ -15,7 +15,7 @@ const Footer = () => {
     <div className='contact'>
       <Grid container spacing={2} direction={{xs: 'column', sm: 'row'}} className='contact-grid' sx={{ marginLeft: { xs: 0 }}}>
         {/* Contact Grid */}
-        <Grid item xs={8} className='contact-form'>
+        <Grid size={{ xs: 12, sm: 8 }} className='contact-form'>
           <div className='footer-left'>
             <img src={logo} alt="logo" className='contact-logo' />
             <Link className='footer-location' underline='none' sx={{ cursor: 'pointer' }} onClick={() => window.open("https://maps.app.goo.gl/WyTyBSpMBhj5M1Sb8", "_blank")} >
@@ -26,7 +26,7 @@ const Footer = () => {
         </Grid>
 
         {/* Info Grid */}
-        <Grid item xs={12} sm={4}>
+        <Grid size={{ xs: 12, sm: 4 }}>
           <div className='contact-info'>
             <Typography variant='h3' sx={{ color: '#99A7CA', fontSize: '34px'}}>{t("contact.phone")}</Typography>
             <Link underline='none' sx={{ color: '#FFFFFF'}} href="tel:+50621004465">
@@ -40,12 +40,12 @@ const Footer = () => {
 
             <Typography variant='h3' sx={{ color: '#99A7CA', fontSize: '34px'}}>{t("contact.social")}</Typography>
             <Grid container spacing={{ sm: 3, lg: 0.5 }}>
-              <Grid item xs={6} sm={1} sx={{ textAlign: { xs: 'end'}}}>
+              <Grid size={{ xs: 6, sm: 1 }} sx={{ textAlign: { xs: 'end'}}}>
                 <IconButton sx={{ padding: 0 }} size='small' color='inherit' onClick={() => window.open("https://www.instagram.com/costalegalcr/", '_blank')}>
                   <InstagramIcon sx={{ fontSize: '1.9rem'}} />
                 </IconButton>
               </Grid>
-              <Grid item xs={6} sm={1} sx={{ textAlign: { xs: 'start'}}}>
+              <Grid size={{ xs: 6, sm: 1 }} sx={{ textAlign: { xs: 'start'}}}>
                 <IconButton sx={{ padding: 0 }} size='small' color='inherit' onClick={() => window.open("https://www.facebook.com/costalegalcr/", '_blank')}>
                   <FacebookIcon sx={{ fontSize: '1.9rem'}} />
                 </IconButton>

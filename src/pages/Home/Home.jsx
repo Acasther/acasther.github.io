@@ -4,7 +4,7 @@ import homeData from '../../assets/data/home';
 import { Button, Typography, Stack, Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from "react-router-dom";
-import Grid from "@mui/material/Unstable_Grid2";
+import Grid from '@mui/material/Grid';
 import Email from '@mui/icons-material/Email';
 import WhatsApp from '@mui/icons-material/WhatsApp';
 import Place from '@mui/icons-material/Place';

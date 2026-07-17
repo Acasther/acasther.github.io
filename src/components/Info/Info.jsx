@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Info.css";
 import { useTranslation } from 'react-i18next';
-import Grid from "@mui/material/Unstable_Grid2";
+import Grid from '@mui/material/Grid';
 import { Stack, Typography, Link } from "@mui/material";
 import Email from '@mui/icons-material/Email';
 import WhatsApp from '@mui/icons-material/WhatsApp';
@@ -15,7 +15,7 @@ const Info = () => {
     <>
     <div className="info-container">
       <Grid className='info-grid' container columns={{ xs: 1, lg: 12 }} direction={{xs: 'column', sm: 'row'}} spacing={2} sx={{ marginLeft: { xs: 0 }}}>
-        <Grid xs={5} className='info-page-form'>
+        <Grid size={{ xs: 1, lg: 5 }} className='info-page-form'>
           <Typography variant='h2'>{t("links.contactUs")}</Typography>
           <span className='article-divider'></span>
           <Stack spacing={1} className="info-stack">
@@ -34,7 +34,7 @@ const Info = () => {
             </Link>
           </Stack>
         </Grid>
-        <Grid xs={7}>
+        <Grid size={{ xs: 1, lg: 7 }}>
           <div className='location-map'>
             <Typography variant="h2">Escazú, San José, Costa Rica</Typography>
             <span className='article-divider'></span>
