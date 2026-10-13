@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/logos/costa_legal_wt.png';
-import { PHONE_NUMBER, EMAIL_ADDRESS, OFFICE_LOCATION, OFFICE_BUILDING } from '../../utils/constants';
+import { PHONE_NUMBER, EMAIL_ADDRESS, OFFICE_LOCATION, OFFICE_BUILDING, PERSONAL_PHONE_NUMBER } from '../../utils/constants';
+import { telLink } from '../../utils/commonFuncs';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -29,8 +30,11 @@ const Footer = () => {
         <Grid size={{ xs: 12, sm: 4 }}>
           <div className='contact-info'>
             <Typography variant='h3' sx={{ color: '#99A7CA', fontSize: '34px'}}>{t("contact.phone")}</Typography>
-            <Link underline='none' sx={{ color: '#FFFFFF'}} href="tel:+50621004465">
-              <Typography variant='body1' sx={{ paddingBottom: 7}}>{PHONE_NUMBER}</Typography>
+            <Link underline='none' sx={{ color: '#FFFFFF'}} href={telLink(PHONE_NUMBER)}>
+              <Typography variant='body1'>{PHONE_NUMBER}</Typography>
+            </Link>
+            <Link underline='none' sx={{ color: '#FFFFFF'}} href={telLink(PERSONAL_PHONE_NUMBER)}>
+              <Typography variant='body1' sx={{ paddingBottom: 7}}>{PERSONAL_PHONE_NUMBER}</Typography>
             </Link>
 
             <Typography variant='h3' sx={{ color: '#99A7CA', fontSize: '34px'}}>{t("contact.email")}</Typography>

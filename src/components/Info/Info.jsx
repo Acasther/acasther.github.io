@@ -6,7 +6,8 @@ import { Stack, Typography, Link } from "@mui/material";
 import Email from '@mui/icons-material/Email';
 import WhatsApp from '@mui/icons-material/WhatsApp';
 import Place from '@mui/icons-material/Place';
-import { EMAIL_ADDRESS, PHONE_NUMBER, OFFICE_LOCATION_LONG } from "../../utils/constants";
+import { EMAIL_ADDRESS, PHONE_NUMBER, OFFICE_LOCATION_LONG, PERSONAL_PHONE_NUMBER } from "../../utils/constants";
+import { whatsappLink } from '../../utils/commonFuncs';
 
 const Info = () => {
   const [t, i18n]  = useTranslation("global");
@@ -19,9 +20,13 @@ const Info = () => {
           <Typography variant='h2'>{t("links.contactUs")}</Typography>
           <span className='article-divider'></span>
           <Stack spacing={1} className="info-stack">
-            <Link underline='none' className="info-row" sx={{ color: '#000000'}} href="tel:+50621004465">
+            <Link underline='none' className="info-row" sx={{ color: '#000000'}} href={whatsappLink(PHONE_NUMBER)} target="_blank" rel="noopener noreferrer">
               <WhatsApp></WhatsApp>
               <Typography variant='body1'>{PHONE_NUMBER}</Typography>
+            </Link>
+            <Link underline='none' className="info-row" sx={{ color: '#000000'}} href={whatsappLink(PERSONAL_PHONE_NUMBER)} target="_blank" rel="noopener noreferrer">
+              <WhatsApp></WhatsApp>
+              <Typography variant='body1'>{PERSONAL_PHONE_NUMBER}</Typography>
             </Link>
             <Link underline='none' className="info-row" sx={{ color: '#000000'}} href={`mailto:${EMAIL_ADDRESS}`}>
               <Email></Email>
