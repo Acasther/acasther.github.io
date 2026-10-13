@@ -5,7 +5,7 @@ import i18n from 'i18next';
 import { initReactI18next, I18nextProvider } from 'react-i18next';
 import { Provider } from 'react-redux';
 import store from './store';
-import ScrollToTop from './utils/ScrollToTop';
+import { ScrollToTop } from './utils/commonFuncs';
 import './index.css';
 import App from './App';
 import en from './assets/i18n/en.json';
